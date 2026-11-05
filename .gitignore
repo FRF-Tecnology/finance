@@ -1,0 +1,16 @@
+# Segredos: NUNCA versionar
+.env
+.env.*
+!.env.example
+
+# Dados financeiros baixados ficam só na máquina
+dados/
+*.sqlite
+*.db
+relatorios/
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

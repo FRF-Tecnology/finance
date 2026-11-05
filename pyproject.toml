@@ -1,0 +1,22 @@
+[project]
+name = "financas"
+version = "0.1.0"
+description = "Controle pessoal de gastos e investimentos (Itaú via Meu Pluggy / Open Finance). Somente leitura."
+requires-python = ">=3.12"
+dependencies = [
+    # MCP somente leitura do Meu Pluggy, fixado num commit auditado.
+    "pluggy-mcp @ git+https://github.com/Moreti2002/open-finance-plugin-mcp@e2011907098114e2b466a1384a209eed93696ff2",
+]
+
+[project.scripts]
+testar-conexao = "financas.testar_conexao:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""

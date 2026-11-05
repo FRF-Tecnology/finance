@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "pluggy": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "--quiet", "python", "-m", "financas.mcp_server"]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "enabledMcpjsonServers": [
+    "pluggy"
+  ],
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Bash(cat .env)",
+      "Bash(cat ./.env)"
+    ]
+  }
+}
